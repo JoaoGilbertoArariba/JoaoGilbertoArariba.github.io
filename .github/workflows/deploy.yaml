@@ -1,15 +1,15 @@
-name: TranslateThis
+name: api-cer
 on:
     push:
         branches:
             - main
 jobs:
-    build:
+      build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
            - name: Install Composer Dependencies
-             working-directory: ./api-cer
+              working-directory: ./api-cer
              run: composer install --prefer-dist
             - run: docker build --target app -t joarariba/php-composer:1.2 -f ./php/Dockerfile .
             - run: docker build -t joarariba/nginx-php:1.0 -f ./nginx/Dockerfile .
