@@ -1,0 +1,19 @@
+{
+    "name": "joarariba/api-cer",
+    "description": "api for Cer's website",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Joarariba\\ApiCer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "joao-prrrr",
+            "email": "joao.prrrr@eduge.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
